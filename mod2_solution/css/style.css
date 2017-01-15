@@ -1,1 +1,75 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  font-family:garamond;
+}
+h1 {
+  text-align:center;
+  font-size:175%;
+}
+
+section{
+  position:relative;
+  background-color:grey;
+  border:black solid 1px;
+  margin-bottom:5px;
+  padding:5px;
+}
+
+.box {
+  position: relative;
+  margin-top:0;
+  margin-right:0;
+  border:black solid 1px;
+  right:-75%;
+  padding:5px;
+  text-align:center;
+  color:blue;
+  width:100px;
+  font-size:125%;
+}
+
+/********** Box background and text colors **********/
+
+section:nth-child(2) p{
+  background-color:#f9be34;
+  color: #20104c;
+} 
+section:nth-child(3) p{
+  background-color:#5b2f08;
+  color:#e5dfb3;
+}
+section:nth-child(4) p{
+  background-color:#473fe2;
+  color: white;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    width: 33.33%;
+  }
+}
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/********** Mobile devices only **********/
+@media (max-width: 767px) {
+
+  .col-sm-12 {
+    float: left;
+    width: 100%;
+  }
+}
 
